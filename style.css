@@ -1,271 +1,360 @@
-/* =====================================
-   GOOGLE FONT
-===================================== */
+/* ===================================================
+   HAPPY GIRLFRIEND'S DAY
+   Premium Romantic Theme
+   Created for Abdulmalik ❤️
+=================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
-
-/* =====================================
-   RESET
-===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
 
-    font-family:'Poppins',sans-serif;
-
-    background:#1b1612;
-
-    color:white;
-
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#120b08;
+color:#ffffff;
+overflow-x:hidden;
 
 }
 
-/* =====================================
-   BACKGROUND
-===================================== */
+/* =======================================
+BACKGROUND
+======================================= */
 
 body::before{
 
-    content:"";
+content:"";
 
-    position:fixed;
+position:fixed;
+inset:0;
 
-    top:0;
+background:
 
-    left:0;
+radial-gradient(circle at top,#5c3b1d,#120b08 65%);
 
-    width:100%;
-
-    height:100%;
-
-    background:
-
-    radial-gradient(circle at top,#4a2d16,#120d09 70%);
-
-    z-index:-3;
+z-index:-3;
 
 }
 
-/* =====================================
-   STARS
-===================================== */
+/* =======================================
+STARS
+======================================= */
 
 body::after{
 
-    content:"";
+content:"";
 
-    position:fixed;
+position:fixed;
+inset:0;
 
-    width:100%;
+background-image:
 
-    height:100%;
+radial-gradient(white 1px,transparent 1px);
 
-    background-image:
+background-size:60px 60px;
 
-    radial-gradient(white 1px,transparent 1px);
+opacity:.12;
 
-    background-size:60px 60px;
+animation:starsMove 80s linear infinite;
 
-    opacity:.15;
-
-    z-index:-2;
+z-index:-2;
 
 }
 
-/* =====================================
-   PASSWORD SCREEN
-===================================== */
+@keyframes starsMove{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-500px);
+
+}
+
+}
+
+/* =======================================
+FLOATING HEARTS
+======================================= */
+
+.floating-hearts{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-1;
+
+}
+
+.floating-hearts span{
+
+position:absolute;
+
+bottom:-100px;
+
+font-size:24px;
+
+color:rgba(255,192,203,.35);
+
+animation:floatHeart 18s linear infinite;
+
+}
+
+.floating-hearts span:nth-child(1){left:5%;animation-delay:0s;}
+.floating-hearts span:nth-child(2){left:18%;animation-delay:2s;}
+.floating-hearts span:nth-child(3){left:30%;animation-delay:5s;}
+.floating-hearts span:nth-child(4){left:45%;animation-delay:8s;}
+.floating-hearts span:nth-child(5){left:60%;animation-delay:10s;}
+.floating-hearts span:nth-child(6){left:75%;animation-delay:12s;}
+.floating-hearts span:nth-child(7){left:88%;animation-delay:15s;}
+.floating-hearts span:nth-child(8){left:96%;animation-delay:18s;}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) scale(.8);
+opacity:0;
+
+}
+
+20%{
+
+opacity:.4;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.4);
+opacity:0;
+
+}
+
+}
+
+/* =======================================
+PASSWORD SCREEN
+======================================= */
 
 #password-screen{
 
-    position:fixed;
+position:fixed;
+inset:0;
 
-    inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
 
-    background:#0e0b09;
+background:rgba(10,10,10,.92);
 
-    display:flex;
+backdrop-filter:blur(8px);
 
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:9999;
-
-}
-
-.password-box{
-
-    width:90%;
-
-    max-width:450px;
-
-    background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(12px);
-
-    border:1px solid rgba(255,215,0,.25);
-
-    border-radius:20px;
-
-    padding:40px;
-
-    text-align:center;
-
-    box-shadow:0 0 40px rgba(255,215,0,.15);
+z-index:99999;
 
 }
 
-.password-box h1{
+.glass-card{
 
-    font-family:'Cinzel',serif;
+width:90%;
+max-width:520px;
 
-    color:#ffd700;
+padding:45px;
 
-    margin-bottom:20px;
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,215,0,.35);
+
+box-shadow:
+
+0 0 60px rgba(255,215,0,.18);
+
+text-align:center;
 
 }
 
-.password-box p{
+.glass-card h1{
 
-    color:#ddd;
+font-family:'Cinzel',serif;
 
-    line-height:1.8;
+font-size:38px;
+
+color:#FFD700;
+
+margin-bottom:15px;
+
+}
+
+.glass-card h2{
+
+font-weight:400;
+
+margin-bottom:20px;
+
+color:#fff;
+
+}
+
+.glass-card p{
+
+line-height:1.8;
+
+color:#ddd;
+
+margin-bottom:25px;
 
 }
 
 #password-input{
 
-    width:100%;
+width:100%;
 
-    margin-top:25px;
+padding:18px;
 
-    padding:15px;
+border:none;
 
-    border:none;
+border-radius:12px;
 
-    outline:none;
+outline:none;
 
-    border-radius:10px;
+font-size:16px;
 
-    background:#221710;
+background:#1b1512;
 
-    color:white;
+color:white;
 
-    font-size:16px;
+margin-bottom:18px;
 
 }
 
 #unlock-btn{
 
-    margin-top:20px;
+width:100%;
 
-    width:100%;
+padding:18px;
 
-    padding:15px;
+border:none;
 
-    border:none;
+border-radius:12px;
 
-    border-radius:10px;
+cursor:pointer;
 
-    cursor:pointer;
+font-size:17px;
 
-    background:#d4af37;
+font-weight:600;
 
-    color:black;
+background:linear-gradient(45deg,#FFD700,#E6C55A);
 
-    font-weight:bold;
+color:#111;
 
-    transition:.4s;
+transition:.35s;
 
 }
 
 #unlock-btn:hover{
 
-    transform:translateY(-3px);
+transform:translateY(-4px);
 
-    box-shadow:0 0 20px gold;
+box-shadow:0 0 30px gold;
 
 }
 
-/* =====================================
-   LOADING SCREEN
-===================================== */
+#error-message{
+
+margin-top:18px;
+
+color:#ff7b7b;
+
+font-weight:600;
+
+}
+
+/* =======================================
+LOADING SCREEN
+======================================= */
 
 #loading-screen{
 
-    display:none;
+position:fixed;
+inset:0;
 
-    position:fixed;
+display:none;
 
-    inset:0;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 
-    background:#0f0b08;
+background:#120b08;
 
-    justify-content:center;
-
-    align-items:center;
-
-    flex-direction:column;
-
-    z-index:9998;
+z-index:99998;
 
 }
 
 .heart-loader{
 
-    width:80px;
+width:80px;
+height:80px;
 
-    height:80px;
+background:#ff3c78;
 
-    background:red;
+position:relative;
 
-    transform:rotate(-45deg);
+transform:rotate(-45deg);
 
-    animation:beat 1s infinite;
+animation:heartbeat 1s infinite;
 
 }
 
 .heart-loader::before,
 .heart-loader::after{
 
-    content:"";
+content:"";
 
-    position:absolute;
+position:absolute;
 
-    width:80px;
+width:80px;
+height:80px;
 
-    height:80px;
+background:#ff3c78;
 
-    background:red;
-
-    border-radius:50%;
+border-radius:50%;
 
 }
 
 .heart-loader::before{
 
-    top:-40px;
+top:-40px;
 
 }
 
 .heart-loader::after{
 
-    left:40px;
+left:40px;
 
 }
 
-@keyframes beat{
+@keyframes heartbeat{
 
 0%,100%{
 
@@ -280,291 +369,351 @@ transform:rotate(-45deg) scale(1.15);
 }
 
 }
-/* =====================================
-   GOOGLE FONT
-===================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+#loading-screen h2{
 
-/* =====================================
-   RESET
-===================================== */
+margin-top:40px;
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+font-weight:400;
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:#1b1612;
-
-    color:white;
-
-    overflow-x:hidden;
+color:#f7dca5;
 
 }
+/* =======================================
+HERO SECTION
+======================================= */
 
-/* =====================================
-   BACKGROUND
-===================================== */
+.hero{
 
-body::before{
+min-height:100vh;
 
-    content:"";
+display:flex;
 
-    position:fixed;
+justify-content:center;
 
-    top:0;
+align-items:center;
 
-    left:0;
+text-align:center;
 
-    width:100%;
+padding:40px;
 
-    height:100%;
-
-    background:
-
-    radial-gradient(circle at top,#4a2d16,#120d09 70%);
-
-    z-index:-3;
+position:relative;
 
 }
 
-/* =====================================
-   STARS
-===================================== */
+.hero-overlay{
 
-body::after{
+position:absolute;
 
-    content:"";
+inset:0;
 
-    position:fixed;
+background:linear-gradient(
 
-    width:100%;
+to bottom,
 
-    height:100%;
+rgba(0,0,0,.35),
 
-    background-image:
+rgba(0,0,0,.65)
 
-    radial-gradient(white 1px,transparent 1px);
-
-    background-size:60px 60px;
-
-    opacity:.15;
-
-    z-index:-2;
+);
 
 }
 
-/* =====================================
-   PASSWORD SCREEN
-===================================== */
+.hero-content{
 
-#password-screen{
+position:relative;
 
-    position:fixed;
+z-index:2;
 
-    inset:0;
-
-    background:#0e0b09;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:9999;
+max-width:900px;
 
 }
 
-.password-box{
+.hero h1{
 
-    width:90%;
+font-family:'Cinzel',serif;
 
-    max-width:450px;
+font-size:70px;
 
-    background:rgba(255,255,255,.05);
+color:#FFD700;
 
-    backdrop-filter:blur(12px);
+margin-bottom:20px;
 
-    border:1px solid rgba(255,215,0,.25);
+text-shadow:
 
-    border-radius:20px;
-
-    padding:40px;
-
-    text-align:center;
-
-    box-shadow:0 0 40px rgba(255,215,0,.15);
+0 0 25px rgba(255,215,0,.6);
 
 }
 
-.password-box h1{
+.hero h2{
 
-    font-family:'Cinzel',serif;
+font-size:38px;
 
-    color:#ffd700;
+font-weight:500;
 
-    margin-bottom:20px;
+margin-bottom:25px;
 
-}
-
-.password-box p{
-
-    color:#ddd;
-
-    line-height:1.8;
+color:#ffffff;
 
 }
 
-#password-input{
+.hero p{
 
-    width:100%;
+font-size:22px;
 
-    margin-top:25px;
+line-height:1.8;
 
-    padding:15px;
+color:#e8e8e8;
 
-    border:none;
-
-    outline:none;
-
-    border-radius:10px;
-
-    background:#221710;
-
-    color:white;
-
-    font-size:16px;
+margin-bottom:45px;
 
 }
 
-#unlock-btn{
+.hero button{
 
-    margin-top:20px;
+padding:18px 45px;
 
-    width:100%;
+border:none;
 
-    padding:15px;
+border-radius:50px;
 
-    border:none;
+font-size:18px;
 
-    border-radius:10px;
+font-weight:600;
 
-    cursor:pointer;
+cursor:pointer;
 
-    background:#d4af37;
+background:linear-gradient(45deg,#FFD700,#f5d46d);
 
-    color:black;
+color:#111;
 
-    font-weight:bold;
-
-    transition:.4s;
+transition:.35s;
 
 }
 
-#unlock-btn:hover{
+.hero button:hover{
 
-    transform:translateY(-3px);
+transform:translateY(-5px);
 
-    box-shadow:0 0 20px gold;
-
-}
-
-/* =====================================
-   LOADING SCREEN
-===================================== */
-
-#loading-screen{
-
-    display:none;
-
-    position:fixed;
-
-    inset:0;
-
-    background:#0f0b08;
-
-    justify-content:center;
-
-    align-items:center;
-
-    flex-direction:column;
-
-    z-index:9998;
+box-shadow:0 0 35px gold;
 
 }
 
-.heart-loader{
+.scroll-indicator{
 
-    width:80px;
+position:absolute;
 
-    height:80px;
+bottom:35px;
 
-    background:red;
+left:50%;
 
-    transform:rotate(-45deg);
+transform:translateX(-50%);
 
-    animation:beat 1s infinite;
+font-size:45px;
 
-}
+animation:bounce 2s infinite;
 
-.heart-loader::before,
-.heart-loader::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:80px;
-
-    height:80px;
-
-    background:red;
-
-    border-radius:50%;
+color:#FFD700;
 
 }
 
-.heart-loader::before{
-
-    top:-40px;
-
-}
-
-.heart-loader::after{
-
-    left:40px;
-
-}
-
-@keyframes beat{
+@keyframes bounce{
 
 0%,100%{
 
-transform:rotate(-45deg) scale(1);
+transform:translate(-50%,0);
 
 }
 
 50%{
 
-transform:rotate(-45deg) scale(1.15);
+transform:translate(-50%,15px);
 
 }
 
->
-/* =====================================
+}
+
+/* =======================================
+COUNTER SECTION
+======================================= */
+
+.counter-section{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.counter-section h2{
+
+font-family:'Cinzel',serif;
+
+font-size:48px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.counter-section p{
+
+font-size:20px;
+
+margin-bottom:50px;
+
+color:#ddd;
+
+}
+
+#countdown{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.time-box{
+
+width:140px;
+
+padding:30px 15px;
+
+background:rgba(255,255,255,.06);
+
+border-radius:20px;
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,215,0,.25);
+
+transition:.35s;
+
+}
+
+.time-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px rgba(255,215,0,.25);
+
+}
+
+.time-box span{
+
+display:block;
+
+font-size:42px;
+
+font-weight:700;
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+}
+
+.time-box p{
+
+margin:0;
+
+font-size:17px;
+
+}
+
+/* =======================================
+GALLERY
+======================================= */
+
+.gallery-section{
+
+padding:100px 25px;
+
+text-align:center;
+
+}
+
+.gallery-section h2{
+
+font-family:'Cinzel',serif;
+
+font-size:46px;
+
+color:#FFD700;
+
+margin-bottom:15px;
+
+}
+
+.gallery-section p{
+
+font-size:19px;
+
+margin-bottom:45px;
+
+color:#ddd;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+cursor:pointer;
+
+border:4px solid rgba(255,215,0,.25);
+
+transition:.45s;
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+border-color:#FFD700;
+
+box-shadow:
+
+0 0 35px rgba(255,215,0,.35);
+
+}
+
+/* =======================================
 LIGHTBOX
-===================================== */
+======================================= */
 
 #lightbox{
 
@@ -580,7 +729,7 @@ justify-content:center;
 
 align-items:center;
 
-z-index:99999;
+z-index:999999;
 
 }
 
@@ -596,17 +745,545 @@ border:5px solid gold;
 
 }
 
-/* =====================================
-SCROLL ANIMATION
-===================================== */
+#closeLightbox{
+
+position:absolute;
+
+top:35px;
+
+right:45px;
+
+font-size:60px;
+
+cursor:pointer;
+
+color:white;
+
+transition:.3s;
+
+}
+
+#closeLightbox:hover{
+
+color:#FFD700;
+
+transform:scale(1.15);
+
+}
+
+/* =======================================
+GENERAL BUTTONS
+======================================= */
+
+button{
+
+font-family:'Poppins',sans-serif;
+
+}
+
+button:hover{
+
+filter:brightness(1.08);
+
+}
+/* =======================================
+LOVE LETTER
+======================================= */
+
+.letter-section{
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.letter-section h2{
+
+font-family:'Cinzel',serif;
+
+font-size:48px;
+
+color:#FFD700;
+
+margin-bottom:35px;
+
+}
+
+#surpriseBtn{
+
+padding:18px 45px;
+
+font-size:18px;
+
+font-weight:600;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#FFD700,#F4D06F);
+
+color:#111;
+
+transition:.35s;
+
+margin-bottom:45px;
+
+}
+
+#surpriseBtn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 30px gold;
+
+}
+
+#letter{
+
+display:none;
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+.letter-card{
+
+background:rgba(255,255,255,.06);
+
+padding:55px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,215,0,.3);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.letter-card h3{
+
+font-family:'Cinzel',serif;
+
+font-size:38px;
+
+color:#FFD700;
+
+margin-bottom:30px;
+
+}
+
+.letter-card p{
+
+font-size:20px;
+
+line-height:2;
+
+white-space:pre-line;
+
+color:#eee;
+
+}
+
+.letter-card h4{
+
+margin-top:40px;
+
+font-size:24px;
+
+color:#FFD700;
+
+}
+
+/* =======================================
+QUOTE
+======================================= */
+
+.quote-section{
+
+padding:100px 20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.quote-box{
+
+max-width:900px;
+
+padding:45px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:25px;
+
+border:1px solid rgba(255,215,0,.25);
+
+}
+
+.quote-box h2{
+
+font-family:'Cinzel',serif;
+
+font-size:38px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.quote-box p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#ddd;
+
+}
+
+/* =======================================
+ENDING
+======================================= */
+
+.ending{
+
+min-height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+position:relative;
+
+}
+
+.ending-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+
+rgba(0,0,0,.3),
+
+rgba(0,0,0,.75)
+
+);
+
+}
+
+.ending-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+}
+
+.ending h1{
+
+font-family:'Cinzel',serif;
+
+font-size:60px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.ending h2{
+
+font-size:36px;
+
+margin-bottom:25px;
+
+}
+
+.ending p{
+
+font-size:22px;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+#playConfetti{
+
+padding:18px 45px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#FFD700,#f4d06f);
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+#playConfetti:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 30px gold;
+
+}
+
+/* =======================================
+MUSIC BUTTON
+======================================= */
+
+#musicToggle{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+border:none;
+
+cursor:pointer;
+
+font-size:28px;
+
+background:#FFD700;
+
+color:#111;
+
+box-shadow:0 10px 30px rgba(255,215,0,.45);
+
+transition:.35s;
+
+z-index:9999;
+
+}
+
+#musicToggle:hover{
+
+transform:scale(1.12) rotate(15deg);
+
+}
+
+/* =======================================
+FOOTER
+======================================= */
+
+footer{
+
+padding:40px 20px;
+
+text-align:center;
+
+background:#0d0907;
+
+border-top:1px solid rgba(255,215,0,.15);
+
+}
+
+footer p{
+
+color:#bbb;
+
+margin:8px;
+
+}
+
+/* =======================================
+AOS ANIMATION FIX
+======================================= */
+
+[data-aos]{
+
+overflow:hidden;
+
+}
+
+/* =======================================
+RESPONSIVE
+======================================= */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.counter-section h2,
+.gallery-section h2,
+.letter-section h2,
+.quote-box h2{
+
+font-size:36px;
+
+}
+
+.ending h1{
+
+font-size:42px;
+
+}
+
+.gallery img{
+
+height:320px;
+
+}
+
+.time-box{
+
+width:120px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.glass-card{
+
+padding:30px;
+
+}
+
+.time-box{
+
+width:95px;
+
+padding:20px 10px;
+
+}
+
+.time-box span{
+
+font-size:30px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery img{
+
+height:280px;
+
+}
+
+.letter-card{
+
+padding:30px;
+
+}
+
+.letter-card p{
+
+font-size:18px;
+
+}
+
+.quote-box{
+
+padding:30px;
+
+}
+
+.ending h1{
+
+font-size:34px;
+
+}
+
+.ending h2{
+
+font-size:24px;
+
+}
+
+}
+
+/* =======================================
+SMOOTH FADE
+======================================= */
 
 section{
 
 opacity:0;
 
-transform:translateY(80px);
+transform:translateY(60px);
 
-transition:1s;
+transition:all 1s ease;
 
 }
 
