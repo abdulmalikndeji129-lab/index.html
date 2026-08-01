@@ -1,0 +1,619 @@
+/* =====================================
+   GOOGLE FONT
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#1b1612;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* =====================================
+   BACKGROUND
+===================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    radial-gradient(circle at top,#4a2d16,#120d09 70%);
+
+    z-index:-3;
+
+}
+
+/* =====================================
+   STARS
+===================================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background-image:
+
+    radial-gradient(white 1px,transparent 1px);
+
+    background-size:60px 60px;
+
+    opacity:.15;
+
+    z-index:-2;
+
+}
+
+/* =====================================
+   PASSWORD SCREEN
+===================================== */
+
+#password-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0e0b09;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.password-box{
+
+    width:90%;
+
+    max-width:450px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 0 40px rgba(255,215,0,.15);
+
+}
+
+.password-box h1{
+
+    font-family:'Cinzel',serif;
+
+    color:#ffd700;
+
+    margin-bottom:20px;
+
+}
+
+.password-box p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+#password-input{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#221710;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+#unlock-btn{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#d4af37;
+
+    color:black;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+#unlock-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px gold;
+
+}
+
+/* =====================================
+   LOADING SCREEN
+===================================== */
+
+#loading-screen{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0f0b08;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9998;
+
+}
+
+.heart-loader{
+
+    width:80px;
+
+    height:80px;
+
+    background:red;
+
+    transform:rotate(-45deg);
+
+    animation:beat 1s infinite;
+
+}
+
+.heart-loader::before,
+.heart-loader::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:80px;
+
+    background:red;
+
+    border-radius:50%;
+
+}
+
+.heart-loader::before{
+
+    top:-40px;
+
+}
+
+.heart-loader::after{
+
+    left:40px;
+
+}
+
+@keyframes beat{
+
+0%,100%{
+
+transform:rotate(-45deg) scale(1);
+
+}
+
+50%{
+
+transform:rotate(-45deg) scale(1.15);
+
+}
+
+}
+/* =====================================
+   GOOGLE FONT
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#1b1612;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* =====================================
+   BACKGROUND
+===================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    radial-gradient(circle at top,#4a2d16,#120d09 70%);
+
+    z-index:-3;
+
+}
+
+/* =====================================
+   STARS
+===================================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background-image:
+
+    radial-gradient(white 1px,transparent 1px);
+
+    background-size:60px 60px;
+
+    opacity:.15;
+
+    z-index:-2;
+
+}
+
+/* =====================================
+   PASSWORD SCREEN
+===================================== */
+
+#password-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0e0b09;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.password-box{
+
+    width:90%;
+
+    max-width:450px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,215,0,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 0 40px rgba(255,215,0,.15);
+
+}
+
+.password-box h1{
+
+    font-family:'Cinzel',serif;
+
+    color:#ffd700;
+
+    margin-bottom:20px;
+
+}
+
+.password-box p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+#password-input{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#221710;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+#unlock-btn{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#d4af37;
+
+    color:black;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+#unlock-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px gold;
+
+}
+
+/* =====================================
+   LOADING SCREEN
+===================================== */
+
+#loading-screen{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0f0b08;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9998;
+
+}
+
+.heart-loader{
+
+    width:80px;
+
+    height:80px;
+
+    background:red;
+
+    transform:rotate(-45deg);
+
+    animation:beat 1s infinite;
+
+}
+
+.heart-loader::before,
+.heart-loader::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:80px;
+
+    background:red;
+
+    border-radius:50%;
+
+}
+
+.heart-loader::before{
+
+    top:-40px;
+
+}
+
+.heart-loader::after{
+
+    left:40px;
+
+}
+
+@keyframes beat{
+
+0%,100%{
+
+transform:rotate(-45deg) scale(1);
+
+}
+
+50%{
+
+transform:rotate(-45deg) scale(1.15);
+
+}
+
+>
+/* =====================================
+LIGHTBOX
+===================================== */
+
+#lightbox{
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.95);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:20px;
+
+border:5px solid gold;
+
+}
+
+/* =====================================
+SCROLL ANIMATION
+===================================== */
+
+section{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
