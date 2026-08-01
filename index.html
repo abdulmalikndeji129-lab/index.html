@@ -1,81 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Girlfriend's Day ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Happy Girlfriend's Day ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
 </head>
+
 <body>
 
-<!-- ================= PASSWORD SCREEN ================= -->
+<!-- ===================================== -->
+<!-- FLOATING HEARTS -->
+<!-- ===================================== -->
+
+<div class="floating-hearts">
+
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+
+</div>
+
+<!-- ===================================== -->
+<!-- PASSWORD SCREEN -->
+<!-- ===================================== -->
 
 <div id="password-screen">
 
-    <div class="password-box">
+<div class="glass-card">
 
-        <h1>❤️ A Special Gift Awaits ❤️</h1>
+<h1>❤️ Happy Girlfriend's Day ❤️</h1>
 
-        <p>
-            Enter the password to unlock
-            something made especially for you.
-        </p>
+<h2>A Little Surprise For My Favorite Person</h2>
 
-        <input
-            type="password"
-            id="password-input"
-            placeholder="Enter Password">
+<p>
 
-        <button id="unlock-btn">
-            Unlock My Heart
-        </button>
+Only one person in this world knows the password...
 
-        <p id="error-message"></p>
+and that person is you.
 
-    </div>
+</p>
+
+<input
+type="password"
+id="password-input"
+placeholder="Enter Password">
+
+<button id="unlock-btn">
+
+Unlock My Heart ❤️
+
+</button>
+
+<p id="error-message"></p>
 
 </div>
 
-<!-- ================= LOADING SCREEN ================= -->
+</div>
+
+<!-- ===================================== -->
+<!-- LOADING -->
+<!-- ===================================== -->
 
 <div id="loading-screen">
 
-    <div class="heart-loader"></div>
+<div class="heart-loader"></div>
 
-    <h2>Preparing something made with love...</h2>
+<h2>
+
+Preparing something made with love...
+
+</h2>
 
 </div>
 
-<!-- ================= MUSIC ================= -->
+<!-- ===================================== -->
+<!-- MUSIC -->
+<!-- ===================================== -->
 
 <audio id="bgMusic" loop>
 
-    <source src="music/all-i-never-need.mp3" type="audio/mpeg">
+<source src="music/all-i-never-need.mp3" type="audio/mpeg">
 
 </audio>
 
-<!-- ================= MAIN WEBSITE ================= -->
+<!-- ===================================== -->
+<!-- WEBSITE -->
+<!-- ===================================== -->
 
 <div id="website">
 
-<!-- ================= HERO ================= -->
+<!-- ===================================== -->
+<!-- HERO -->
+<!-- ===================================== -->
 
 <section class="hero">
 
-<div class="overlay"></div>
+<div class="hero-overlay"></div>
 
-<div class="hero-content">
+<div class="hero-content" data-aos="zoom-in">
 
-<h1>A Letter Written With Love</h1>
+<h1>
 
-<h2>Happy Girlfriend's Day</h2>
+Happy Girlfriend's Day
 
-<h3>To My Own ❤️</h3>
+</h1>
+
+<h2>
+
+To My Own ❤️
+
+</h2>
 
 <p>
 
@@ -87,31 +141,47 @@ But ours is my favorite.
 
 <button id="startJourney">
 
-Open My Heart ❤️
+Begin Our Journey ❤️
 
 </button>
 
 </div>
 
+<div class="scroll-indicator">
+
+↓
+
+</div>
+
 </section>
 
-<!-- ================= JOURNEY ================= -->
+<!-- ===================================== -->
+<!-- LOVE COUNTER -->
+<!-- ===================================== -->
 
-<section class="journey">
+<section class="counter-section" data-aos="fade-up">
 
-<h2>Our Beautiful Journey</h2>
+<h2>
 
-<p class="date">
+Our Journey Together
 
-Together Since
+</h2>
 
-<strong>18 March 2023</strong>
+<p>
+
+Since
+
+<strong>
+
+18 March 2023
+
+</strong>
 
 </p>
 
 <div id="countdown">
 
-<div>
+<div class="time-box">
 
 <span id="years">0</span>
 
@@ -119,7 +189,7 @@ Together Since
 
 </div>
 
-<div>
+<div class="time-box">
 
 <span id="months">0</span>
 
@@ -127,7 +197,7 @@ Together Since
 
 </div>
 
-<div>
+<div class="time-box">
 
 <span id="days">0</span>
 
@@ -135,7 +205,7 @@ Together Since
 
 </div>
 
-<div>
+<div class="time-box">
 
 <span id="hours">0</span>
 
@@ -143,7 +213,7 @@ Together Since
 
 </div>
 
-<div>
+<div class="time-box">
 
 <span id="minutes">0</span>
 
@@ -151,7 +221,7 @@ Together Since
 
 </div>
 
-<div>
+<div class="time-box">
 
 <span id="seconds">0</span>
 
@@ -161,62 +231,80 @@ Together Since
 
 </div>
 
-<h2>
-
-Our Memories ❤️
-
-</h2>
-
-<div class="gallery">
-
-<img src="photos/photo1.jpg" alt="Memory 1">
-
-<img src="photos/photo2.jpg" alt="Memory 2">
-
-<img src="photos/photo3.jpg" alt="Memory 3">
-
-<img src="photos/photo4.jpg" alt="Memory 4">
-
-<img src="photos/photo5.jpg" alt="Memory 5">
-
-</div>
-
 </section>
 
-<!-- ================= SURPRISE ================= -->
+<!-- ===================================== -->
+<!-- MEMORIES -->
+<!-- ===================================== -->
 
-<section class="surprise">
-
-<h2>
-
-One Last Surprise...
-
-</h2>
-
-<button id="surpriseBtn">
-
-🎁 Click For A Surprise
-
-</button>
-
-<div id="letter">
+<section class="gallery-section" data-aos="fade-up">
 
 <h2>
 
-To My Own ❤️
+Our Beautiful Memories ❤️
 
 </h2>
 
 <p>
 
+Every picture tells a story.
+
+Every smile reminds me why I love you.
+
+</p>
+
+<div class="gallery">
+
+<img
+src="photo_2026-08-01_07-00-19.jpg"
+alt="Memory One">
+
+<img
+src="photo_2026-08-01_07-01-40.jpg"
+alt="Memory Two">
+
+<img
+src="photo_2026-08-01_07-01-44.jpg"
+alt="Memory Three">
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LOVE LETTER -->
+<!-- ===================================== -->
+
+<section class="letter-section" data-aos="zoom-in">
+
+<h2>
+
+A Letter From My Heart ❤️
+
+</h2>
+
+<button id="surpriseBtn">
+
+Open My Letter 💌
+
+</button>
+
+<div id="letter">
+        <div class="letter-card">
+
+        <h3>To My Own ❤️</h3>
+
+        <p id="letterText">
+
 Every day with you has become another reason to thank Allah.
 
-You have brought peace to my heart,
+You brought peace to my heart,
 joy to my life,
 and warmth to my soul.
 
 Thank you for every smile,
 every prayer,
+every laugh,
 every hug,
 and every beautiful memory we've created together.
 
@@ -236,9 +324,9 @@ Forever.
 
 ❤️
 
-</p>
+        </p>
 
-<h3>
+        <h4>
 
 Forever Yours,
 
@@ -246,39 +334,136 @@ Forever Yours,
 
 Abdulmalik
 
-</h3>
+        </h4>
+
+    </div>
 
 </div>
 
 </section>
 
-<!-- ================= FINAL ================= -->
+<!-- ===================================== -->
+<!-- QUOTE SECTION -->
+<!-- ===================================== -->
+
+<section class="quote-section" data-aos="fade-up">
+
+<div class="quote-box">
+
+<h2>
+
+"You are the answer to every prayer I whispered."
+
+</h2>
+
+<p>
+
+I thank Allah every single day for bringing you into my life.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- FINAL SECTION -->
+<!-- ===================================== -->
 
 <section class="ending">
 
+<div class="ending-overlay"></div>
+
+<div class="ending-content" data-aos="zoom-in">
+
 <h1>
 
-I prayed for someone like you...
+I Prayed For Someone Like You...
 
 </h1>
 
 <h2>
 
-And Allah answered.
-
-❤️
+And Allah Answered ❤️
 
 </h2>
 
-</section>
+<p>
+
+No matter what tomorrow brings...
+
+I'll always choose you.
+
+Always.
+
+</p>
+
+<button id="playConfetti">
+
+Celebrate Our Love 🎉
+
+</button>
 
 </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- LIGHTBOX -->
+<!-- ===================================== -->
+
+<div id="lightbox">
+
+<span id="closeLightbox">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<!-- ===================================== -->
+<!-- MUSIC BUTTON -->
+<!-- ===================================== -->
+
+<button id="musicToggle">
+
+🎵
+
+</button>
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+
+<footer>
+
+<p>
+
+Made with ❤️ by Abdulmalik
+
+</p>
+
+<p>
+
+Happy Girlfriend's Day 2026
+
+</p>
+
+</footer>
+
+</div>
+
+<!-- ===================================== -->
+<!-- LIBRARIES -->
+<!-- ===================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <script src="scripts.js"></script>
 
 </body>
+
 </html>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
