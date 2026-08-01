@@ -4,7 +4,7 @@
 
 const PASSWORD = "147265";
 
-const passwordScreen = document.getElementById("147265");
+const passwordScreen = document.getElementById("password-screen");
 const loadingScreen = document.getElementById("loading-screen");
 const website = document.getElementById("website");
 
